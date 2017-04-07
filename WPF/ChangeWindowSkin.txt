@@ -1,0 +1,15 @@
+<Window.Resources>
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary
+            Source="Resources/GradientButton.xaml"></ResourceDictionary>
+        </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+</Window.Resources>
+
+Now you can swap in a different resource dictionary by using code like this:
+
+ResourceDictionary newDictionary = new ResourceDictionary();
+newDictionary.Source = new Uri(
+"Resources/GradientButtonVariant.xaml", UriKind.Relative);
+this.Resources.MergedDictionaries[0] = newDictionary;

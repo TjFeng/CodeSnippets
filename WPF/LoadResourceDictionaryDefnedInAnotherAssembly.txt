@@ -1,0 +1,5 @@
+ResourceDictionary newDictionary = new ResourceDictionary();
+newDictionary.Source = new Uri(
+"ControlTemplateLibrary;component/GradientButtonVariant.xaml",
+UriKind.Relative);
+this.Resources.MergedDictionaries[0] = newDictionary;
